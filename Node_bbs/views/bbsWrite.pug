@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    section.container
+        form(method="POST")
+            .form-group
+                input(name="b_title",placeholder="제목").form-control
+            div.form-group
+                input(name="b_write",placeholder="작성자").form-control
+            div.form-group
+                input(name="b_text",placeholder="내용").form-control
+            div.form-group
+                button.btn.btn-primary 전송
+
+
