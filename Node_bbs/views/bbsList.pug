@@ -5,17 +5,22 @@ block content
         h2 BBS List
         table.table.table-striped.table-hover
             tr  
+                th No
                 th 작성일자
                 th 작성시각
                 th 작성자
                 th 제목
                 th 조회수
-            each vo in bbsList
-                tr
+            each vo,index in bbsList
+                //- UD 기능 구현 위해서 PK값을 tr태그에 data-id라는 속성값으로
+                //- 참조할 수 있도록 미리 코드 만들어두는 것
+                tr(data-id= vo._id)
+                    td #{ index +1 } 
                     td= vo.b_date
                     td= vo.b_time
                     td= vo.b_write
-                    td= vo.b_title
+                    td
+                        a(href="/bbs/view/"+vo._id)= vo.b_title
                     td= vo.b_count
         p 
             a(href="/bbs/write") 새로작성
