@@ -1,17 +1,9 @@
-<!DOCTYPE html>
+extends layout
 
-<html>
-  <head>
-    <title>홈페이지</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1>주선영님 반갑습니다 </h1>
-    <p> 안녕하세요 오늘은 #{date}입니다
-    <p> 지금시각은 #{time}입니다</p>
-
-    form(method="POST", action="/home/input")
-    input(type="text",name="m_user")
+block content
+  h1 주선영 님 #{title} 
+  p 안녕하세요 오늘은 #{ date } 입니다
+  p 현재시각 : #{ time }
+  form
+    input(type="text")
     button 전송
-  </body>
-</html>
