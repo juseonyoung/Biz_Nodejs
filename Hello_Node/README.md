@@ -29,3 +29,21 @@
 4. tag에 태그를 포함할 때는 포함되는 태그의 앞에 tab을 눌러야 한다
 5. pug nodejs에 의해서 transfiler(파일변환)가 되고 실제로는 html코드로 만들어져서 client에 전송된다.
 6. nodejs에 설치한 pug 모듈에 의해서 파일이 변환된다.
+
+## 2020-09-14
+
+### MEAN Stack, MERN Stack
+
+- 백엔드 프론트엔드 모두를 다루고 개발이 가능한 개발자를 풀스택 개발자라고한다
+- Mean Stack 개발자 : 몽고디비, express, angular, nodejs
+- Mern Stack 개발자 : 몽고디비, express, React, nodejs
+
+### NodeJS + express project
+
+- nodejs 설치 후 npm install express-generator 설치!
+  express-generator는 express 프레임워크를 사용하는 웹 app의 기본 템플릿을 만들어주는 도구이다.
+- express 프로젝트 : express 프레임워크를 사용하는 웹 app 생성
+- npm install : express 프로젝트의 기본 dependency를 다운로드
+- npm install pug : jade view 엔진을 pug로 업데이트
+- npm uninstall jade
+- app.js의 view 엔진을 jade에서 pug로 바꾸기
