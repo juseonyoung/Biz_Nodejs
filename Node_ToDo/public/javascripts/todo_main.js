@@ -37,13 +37,28 @@ document.addEventListener("DOMContentLoaded", function () {
     // 같은 클래스가 지정된 태그가 1개만 있을 경우
     // 쿼리셀렉터() 사용해서 조회할 수 있다
     let todo_input = document.querySelector("input")[0];
+
+    // 객체.value : input box일 경우 에만 사용가능한 속성
+    // input box에 사용자가 문자열을 입력하면 입력한 내용이 value에 담긴다
+    // 객체.value 값을 todo_value라는 변수에 옮겨담기
     let todo_value = todo_input.value;
+
     if (todo_value === "") {
       alert("할일 반드시 입력ㅎh!");
+
+      // input tag모두 읽어서 배열로 처리하는 방법
       document.querySelectorAll("input")[0].focus();
+
+      //정확히 필요한 input 을 select하여 처리하는방법(추천)
+      document
+        .querySelector("section.todo_main form input[name='todo']")
+        .focus();
       return false;
     }
     if (confirm("저장할까요?")) {
+      //화면에 form이 1개뿐
+      // 만약 화면에 여러개의 form이 있으면 id를 부여 select하는 것이좋다
+      // 입력한 데이터를 서버로 전송하라
       document.querySelector("form").submit();
     }
   });

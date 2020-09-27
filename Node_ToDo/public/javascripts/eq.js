@@ -42,16 +42,16 @@ console.log(b);
 console.log(0 == false);
 console.log(0 === false);
 
-let num = 0;
+let num = 0; //단락평가? 첫번째 값만으로 확실할때
 if (num && ++num) {
   // num이 true 인지 본다
-  // num은 false 이기때문에 뒤 문장을 볼 것도 없음
+  // num은 false 이기때문에(0이니까) 뒤 문장을 볼 것도 없음
   // num++이 실행이안됨
 }
 console.log("num && ++num:", num);
 
 if (num || ++num) {
-  // num이 false인 것 확인
-  // OR 조건이기때문에 ++num를 만나 num은 1이 됨
+  // num이 false인 것 확인 num =0은 false이다 1은 true
+  // OR 조건이기때문에 ++num를 만나 num은 1이 됨 1은 참
 }
 console.log("num || ++num:", num);

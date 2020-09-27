@@ -1,0 +1,9 @@
+body {
+  padding: 90px;
+  font: 13px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("../images/센과기차.jpg");
+}
+
+a {
+  color: #00b7ff;
+}

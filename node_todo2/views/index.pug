@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  link(rel="stylesheet", href="/stylesheets/todo_main.css")
+  script(src="/javascripts/todo_main.js")
+
+  section.todo_main
+  h1 #{date} 오늘의 할 일🍉
+    form(method="post")
+    input(type="text",name="todo", id="todo", placeholder="할일 입력하기")
+    button(type="button", id="btn-save") 저장
+
+    article.todo_list
+      ul
+        li
+          .input-form
+            input(name="box-check", id="checkbox", type="checkbox", value="5")
+            p(id="contents") 학원가기
+           
+
+            p(id="data_time") #{date} #{time} 
+          button(type="button", id="btn-update") 수정하기
+          button(type="button", id="btn-delete") 삭제하기
+          

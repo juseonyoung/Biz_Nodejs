@@ -1,0 +1,52 @@
+section.todo_main {
+  width: 10%;
+  margin: auto;
+}
+
+button#btn-save {
+  cursor: pointer;
+  background-color: tomato;
+}
+button#btn-update {
+  cursor: pointer;
+  background-color: tomato;
+  color: black;
+  margin-right: 8px;
+}
+
+button#btn-delete {
+  cursor: pointer;
+  background-color: yellowgreen;
+}
+
+article.todo_list {
+  border: 1px solid #ddd;
+  margin: 0.5% auto;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  width: 95%;
+  opacity: 0.7;
+}
+
+article.todo_list ul li {
+  width: 100%;
+  margin: 3px;
+  padding: 8px;
+  list-style: none;
+}
+
+.input-form p#data_time {
+  display: inline-block;
+  text-align: right;
+  margin-right: 100px;
+  text-align: right;
+  color: blue;
+}
+
+.input-form p#contents {
+  display: inline-block;
+  margin: 10px;
+  width: 45%;
+  border-bottom: 2px solid skyblue;
+  color: black;
+}
